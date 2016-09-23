@@ -10,21 +10,6 @@ import java.io.IOException;
  * Created by Jzhung on 2016/8/31.
  */
 public class TestMain {
-    public static void main(String[] args) {
-        testGet();
-    }
-
-    public static void testGet(){
-        String url = "http://192.168.1.9:8891/json/lesson/getLessons.action";
-        try {
-            String content = Request.Get(url).execute().returnContent().asString();
-            System.out.println(content);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
     @Test
     public void getGetWeather(){
         String url = "http://www.kuaishou.com/hot";
